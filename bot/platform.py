@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
 """克隆平台：多租户机器人托管、进程监督与后台交互扩展。"""
 import os
 import re
@@ -231,7 +231,7 @@ async def platform_guard(update,context):
 
 _platform_old_keyboard=handle_keyboard
 
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
 async def handle_keyboard(update,context):
     uid=update.effective_user.id; text=update.effective_message.text.strip(); state=get_state(uid)
     if not CLONE_ID and text in ('克隆机器人','管理我的','查看余额','余额充值','返回首页'):
@@ -484,4 +484,4 @@ async def handle_admin_input_full(update,context,state):
 if __name__ == "__main__":
     main()
 
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询

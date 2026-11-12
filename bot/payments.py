@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
 """支付对接：OkPay、TON-USDT、TRON-USDT 的地址校验与链上查询。"""
 import re
 import time
@@ -208,7 +208,7 @@ async def fetch_ton_usdt_incoming(address: str, api_key: str = "", limit: int = 
     return out
 
 
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
 async def fetch_tron_usdt_incoming(address: str, api_key: str = "", limit: int = 200, start_time: int = 0) -> list:
     from decimal import Decimal
     params = {"only_to": "true", "contract_address": TRON_USDT_CONTRACT,
@@ -388,4 +388,4 @@ async def check_tron_usdt_order(context, order_id, chat_id=None, msg_id=None):
 # 生图执行（后台任务）
 # ============================================================
 
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询

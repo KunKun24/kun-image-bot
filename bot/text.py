@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
 """底层工具：时间/编号生成、文本截断、金额格式化、HTML 转义与 Telegram 实体转换。
 
 本模块不允许依赖 db / utils / drawing 等上层模块，避免循环导入。
@@ -176,7 +176,7 @@ def message_to_html(message) -> str:
 
 _emoji_strip_re = None
 
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
 def _strip_leading_emoji(text: str) -> str:
     """去掉文字开头的普通emoji（避免和会员图标重复显示）"""
     global _emoji_strip_re
@@ -328,4 +328,4 @@ async def safe_edit_text(context: ContextTypes.DEFAULT_TYPE, chat_id: int, messa
 # 通用：发送带可选配图的文案（所有文案都支持配图）
 # ============================================================
 
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询

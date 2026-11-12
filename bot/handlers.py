@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
 """Telegram 处理层：命令、键盘、回调、管理员后台与定时任务。"""
 import os
 import re
@@ -1107,7 +1107,7 @@ async def create_crypto_payment(update: Update, context: ContextTypes.DEFAULT_TY
 # 支付状态查询
 # ============================================================
 
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
 async def check_payment(update: Update, context: ContextTypes.DEFAULT_TYPE, order_id: str, msg_id: int):
     order = get_order(order_id)
     if not order:
@@ -2434,4 +2434,4 @@ async def resume_pending_tasks(app):
             log.warning(f"[生图恢复] 任务{row['task_id']}恢复失败: {e}")
 
 
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询

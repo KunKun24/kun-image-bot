@@ -137,5 +137,10 @@ This project is for learning and technical research only. Please comply with the
 
 ```
 Kun Image Bot / Open-sourced by TG KunKun @sad1881 — KunKun takes on all kinds of projects, inquiries welcome
-This source code was developed with DeepSeek V4.1 / V4 Pro — please respect the original work when reposting
 ```
+
+---
+
+## About AIGC
+
+> This project contains AIGC (AI-generated) content. AI shortened development time; every line of code was carefully reviewed.

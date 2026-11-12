@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
 """通用工具：时间、金额、按钮、会话状态与安全编辑。"""
 import os
 import re
@@ -80,7 +80,7 @@ def KButton(text: str, color: str = "", **kwargs) -> KeyboardButton:
     return KeyboardButton(text=clean_text or "按钮", **kwargs)
 
 
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
 def KButtonCfg(key: str, **kwargs) -> KeyboardButton:
     """从配置读取底部键盘按钮：文字+颜色+会员图标"""
     text = get_config_raw(key, key)
@@ -148,4 +148,4 @@ def home_keyboard():
         [KButton(_clone_label('btn_clone_entry')),KButtonCfg('btn_recharge')],[KButtonCfg('btn_example')]],resize_keyboard=True,is_persistent=True)
 
 
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询

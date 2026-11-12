@@ -140,3 +140,9 @@ systemctl restart shengtu-bot
 ```
 
 数据库表结构变更由代码内的 `init_db()` / `tenant_migrate()` 自动补齐（`ALTER TABLE` 幂等）。
+
+---
+
+## 关于 AIGC
+
+> 项目包含 AIGC 内容，AI 减少了开发时间；我们也认真审核了每一条代码。

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
 """生图核心：上游 API 调用、图片规范化、任务执行与交付。"""
 import os
 import io
@@ -422,7 +422,7 @@ draw_worker = DrawWorker()
 # 提示词优化（调用gpt-5.5语言模型）
 # ============================================================
 
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
 async def optimize_prompt_api(prompt: str) -> Optional[str]:
     """调用语言模型优化提示词，返回优化后的提示词，失败返回None"""
     if get_config("optimize_enabled", "1") != "1":
@@ -664,4 +664,4 @@ async def send_to_channel(context: ContextTypes.DEFAULT_TYPE, user_id: int, cost
 # /start 命令
 # ============================================================
 
-# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询 / 本源码由 DeepSeek V4.1 / V4 Pro 开发 转载请尊重原创
+# 困困生图机器人 / 由 TG 困困开源 @sad1881 困困承接各种业务 欢迎咨询
