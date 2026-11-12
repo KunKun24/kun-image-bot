@@ -40,8 +40,8 @@ ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "").replace("，", ",")
 # Web 服务端口（OkPay 异步回调）
 WEB_PORT = int(os.environ.get("WEB_PORT", "5003"))
 # 数据库和生成图片都放项目根目录
-DB_PATH = os.path.join(BASE_DIR, "image_bot.db")
-SAVE_DIR = os.path.join(BASE_DIR, "generated_images")
+DB_PATH = os.environ.get("DB_PATH") or os.path.join(BASE_DIR, "image_bot.db")
+SAVE_DIR = os.environ.get("SAVE_DIR") or os.path.join(BASE_DIR, "generated_images")
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 # ApiNebula (KK大模型1.0)

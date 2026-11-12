@@ -1,0 +1,12 @@
+.git
+.github
+.venv
+__pycache__
+*.pyc
+*.db
+*.db-*
+.env
+generated_images
+logs
+backups
+.claude

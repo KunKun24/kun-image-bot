@@ -127,6 +127,18 @@ Suggested backup: `sqlite3 image_bot.db ".backup backup.db"` plus archiving `gen
 
 ---
 
+## Docker
+
+```bash
+cp .env.example .env      # set BOT_TOKEN, ADMIN_IDS, etc.
+docker compose up -d --build
+```
+
+- The SQLite database and generated images live in the `data` volume (`/data` inside the container), so recreating the container keeps them
+- OkPay callbacks need port 5003 exposed publicly or proxied through a reverse proxy
+- Multi-arch image (`linux/amd64`, `linux/arm64`): `ghcr.io/kunkun24/kun-image-bot`
+
+
 ## Disclaimer
 
 This project is for learning and technical research only. Please comply with the laws and regulations of your jurisdiction and with Telegram platform rules, and do not use it to generate or distribute illegal content. All consequences arising from the use of this project are borne by the user.

@@ -2,6 +2,17 @@
 
 面向 Ubuntu 20.04+ / Debian 11+（其他 Linux 发行版同理）。Windows 可运行，但克隆平台的进程守护依赖 `fcntl`/`prctl`，仅限 Linux。
 
+## Docker 部署
+
+```bash
+cp .env.example .env
+docker compose up -d --build
+```
+
+`data` 卷保存 SQLite 与生成图片；下面 2-5 节仅在不用 Docker 时需要。
+
+---
+
 ## 1. 环境要求
 
 | 项目 | 要求 |

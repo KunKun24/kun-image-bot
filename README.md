@@ -127,6 +127,18 @@ python main.py
 
 ---
 
+## Docker 部署
+
+```bash
+cp .env.example .env      # 填 BOT_TOKEN、ADMIN_IDS 等
+docker compose up -d --build
+```
+
+- SQLite 数据库与生成图片都放在 `data` 数据卷（容器内 `/data`），重建容器不丢
+- OkPay 异步回调需要把 5003 端口映射到公网，或在反向代理上转发
+- 多架构镜像（`linux/amd64`、`linux/arm64`）：`ghcr.io/kunkun24/kun-image-bot`
+
+
 ## 免责声明
 
 本项目仅供学习与技术研究。请遵守所在地法律法规与 Telegram 平台规则，不得用于生成、传播违法违规内容；因使用本项目产生的一切后果由使用者自行承担。

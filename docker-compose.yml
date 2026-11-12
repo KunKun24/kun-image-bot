@@ -1,0 +1,19 @@
+services:
+  bot:
+    build: .
+    image: ghcr.io/kunkun24/kun-image-bot:latest
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      # SQLite 与生成图片放在数据卷里，重建容器不丢
+      DB_PATH: /data/image_bot.db
+      SAVE_DIR: /data/generated_images
+      WEB_PORT: "5003"
+    volumes:
+      - data:/data
+    ports:
+      - "${WEB_PORT:-5003}:5003"
+
+volumes:
+  data:
